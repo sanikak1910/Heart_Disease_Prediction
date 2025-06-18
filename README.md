@@ -1,52 +1,62 @@
 # ❤️ Heart Disease Prediction using Machine Learning
 
-This mini project uses machine learning algorithms to predict the likelihood of heart disease based on patient data. Two models were trained and evaluated: **Logistic Regression** and **Random Forest**, with Random Forest achieving the best accuracy.
+This project predicts the presence of heart disease using multiple machine learning models. It includes a user-friendly web interface built with Flask, allowing real-time predictions based on user input.
 
 ---
 
-## 📌 Project Overview
+## 🚀 Features
 
-Heart disease is a leading cause of death globally, and early prediction can help in timely intervention. This project builds a classification model that can predict whether a person is likely to have heart disease based on various medical attributes.
-
----
-
-## 🧠 Algorithms Used
-
-- **Logistic Regression**
-- **Random Forest Classifier** 
+- Accepts patient details via web form
+- Predicts heart disease risk using ML models
+- Compares performance across 7 algorithms
+- Displays colored output: green (safe), red (at risk)
+- Clean UI with Flask + HTML + CSS
 
 ---
 
-## 📊 Model Performance
+## 🧠 Models Implemented & Accuracy
 
-| Algorithm           | Accuracy   |
-|---------------------|------------|
-| Logistic Regression | ~85%       |
-| Random Forest       | **90.16%** |
+| Model                    | Accuracy (%) |
+|-------------------------|--------------|
+| Logistic Regression     | 86.96        |
+| Naive Bayes             | 82.61        |
+| Support Vector Machine  | 85.33        |
+| K-Nearest Neighbors     | 70.65        |
+| Decision Tree           | 88.04        |
+| Random Forest           | **90.22**    |
+| Neural Network (MLP)    | 86.41        |
+
+> ✅ **Highest Accuracy**: Random Forest (90.22%)
 
 ---
 
-## 📁 Dataset
+## 📊 Dataset
 
-The dataset used is a well-known [Heart Disease UCI dataset](https://www.kaggle.com/datasets/ronitf/heart-disease-uci), which includes features like:
+This project uses the [UCI Heart Disease Dataset](https://archive.ics.uci.edu/ml/datasets/heart+Disease) which includes features like:
 
 - Age
-- Sex
-- Chest pain type (cp)
-- Resting blood pressure (trestbps)
-- Cholesterol (chol)
-- Fasting blood sugar (fbs)
-- Resting electrocardiographic results (restecg)
-- Maximum heart rate achieved (thalach)
-- Exercise-induced angina (exang)
-- ST depression (oldpeak), etc.
+- Gender
+- Chest Pain Type
+- Resting Blood Pressure
+- Cholesterol
+- Fasting Blood Sugar
+- ECG Results
+- Max Heart Rate
+- Exercise Induced Angina
+- ST Depression
+- Slope of ST Segment
+- Major Vessels (CA)
+- Thalassemia
 
 ---
 
-## ⚙️ Tech Stack
+## 🛠️ Tech Stack
 
-- Python
-- Pandas, NumPy
-- Scikit-learn
-- Matplotlib / Seaborn (for visualization)
-- Jupyter Notebook / Google Colab
+- **Backend**: Python, Flask
+- **Frontend**: HTML, CSS, Jinja2
+- **Machine Learning**: scikit-learn 
+- **Model Persistence**: joblib
+- **Data Handling**: pandas, numpy
+
+---
+
