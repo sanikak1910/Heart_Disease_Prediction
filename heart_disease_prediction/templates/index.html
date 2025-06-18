@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="static\style.css">
+</head>
+
+<body>
+    <h2>Heart Disease Predictor</h2>
+    <form method="POST" action="/">
+        {{ form.csrf_token }}
+        <!-- <div class="row1"> -->
+            {{form.age.label}}<br> {{form.age(size=20)}}<br>
+            {{form.sex.label}} {{form.sex(size=20)}}<br>
+        <!-- </div> -->
+        {{form.cp.label}}{{form.cp(size=20)}}<br>
+        <!-- <div class="row1"> -->
+            {{form.trestbps.label}}<br> {{form.trestbps(size=20)}}<br>
+            {{form.chol.label}}<br> {{form.chol(size=20)}}<br>
+        <!-- <div class="row1"> -->
+            {{form.fbs.label}} {{form.fbs(size=20)}}<br>
+            {{form.exang.label}} {{form.exang(size=20)}}<br>
+        <!-- <div class="row1"> -->
+            {{form.oldpeak.label}}<br> {{form.oldpeak(size=20)}}<br>
+            {{form.thalch.label}} <br>{{form.thalch(size=20)}}<br>
+        <!-- <div class="row1"> -->
+            {{form.restecg.label}} {{form.restecg(size=20)}}<br>
+            {{form.ca.label}}<br> {{form.ca(size=20)}}<br>
+        <!-- <div class="row1"> -->
+            {{form.slope.label}} {{form.slope(size=20)}}<br>
+            {{form.thal.label}} {{form.thal(size=20)}}<br>
+        <!-- </div> -->
+
+            {{form.submit()}}
+    </form>
+    {% if prediction[0] == 1%}
+    <h2 style="color:red">Result: At risk of heart disease</h2>
+    {% else %}
+    <h2 style="color:green">Result: Not at risk</h2>
+    {% endif %}
+</body>
+
+</html>

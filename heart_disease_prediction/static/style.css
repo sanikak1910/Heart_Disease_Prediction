@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: rgba(255, 21, 0, 0.55); */
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7fcfe;
+    margin:50px;
+    flex-direction: column;
+    background-image: url(./bg.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+h2{
+    text-align: center;
+    margin:10px 0;
+    font-size:40px;
+    font-family:  "PT Sans", sans-serif;
+    color:#333334;
+}
+form{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    width:600px;
+    height:auto;
+    margin:30px auto;
+    
+}
+form input{
+    margin:5px;
+    padding:8px;
+    
+}
+label{
+    font-size:15px;
+}
+form ul{
+    list-style-type: none;
+    margin-left:10px;
+    display:flex;
+    justify-content:flex-start;
+    align-items: stretch;
+}
+li {
+    margin: 5px 10px;;
+}
